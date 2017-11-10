@@ -1,5 +1,5 @@
 extern crate build_script_file_gen;
-use build_script_file_gen::gen_file;
+use build_script_file_gen::gen_file_str;
 
 use std::{env};
 use std::path::Path;
@@ -15,7 +15,7 @@ fn main() {
     write!(f, "{}", hello_world).unwrap();
 
     //The same functionality above can be achieved using 
-    //the build_script_file_gen crate's gen_file method
+    //the build_script_file_gen crate's gen_file_str method
     let file_content = "This content was added and included using the build_script_file_gen crate's gen_file function and include_file_str! macro respectively";
-    gen_file("gen_file.txt", &file_content);
+    gen_file_str("gen_file.txt", &file_content);
 }
