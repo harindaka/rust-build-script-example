@@ -16,6 +16,11 @@ fn main() {
 
     //The same functionality above can be achieved using 
     //the build_script_file_gen crate's gen_file_str method
-    let file_content = "This content was added and included using the build_script_file_gen crate's gen_file function and include_file_str! macro respectively";
-    gen_file_str("gen_file.txt", &file_content);
+    let string_content = "Hello World! from String";
+    gen_file_str("hello.txt", &string_content);
+
+    //or
+
+    let rust_code = r#"println!("Hello World! from Rust");"#;
+    gen_file_str("hello.rs", &rust_code);
 }

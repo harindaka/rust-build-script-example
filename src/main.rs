@@ -8,5 +8,10 @@ fn main() {
     
     //The same functionality above can be achieved using 
     //the build_script_file_gen crate's include_file_str! macro
-    println!(include_file_str!("gen_file.txt"));
+    println!(include_file_str!("hello.txt"));
+
+    //or
+
+    //Includes the file content in the surrounding code unhygienically.
+    include_file!("hello.rs");
 }
