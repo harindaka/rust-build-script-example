@@ -14,8 +14,8 @@ fn main() {
     let hello_world = "Hello World!";
     write!(f, "{}", hello_world).unwrap();
 
-    //The same above can be achieved using the build_script_file_gen crate as follows
-    let file_name = String::from("gen_file.txt");
-    let content = String::from("This file content was added using the build_script_file_gen crate's gen_file function");
-    gen_file(&file_name, &content);
+    //The same functionality above can be achieved using 
+    //the build_script_file_gen crate's gen_file method
+    let file_content = "This content was added and included using the build_script_file_gen crate's gen_file function and include_file_str! macro respectively";
+    gen_file("gen_file.txt", &file_content);
 }
