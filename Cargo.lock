@@ -1,0 +1,4 @@
+[root]
+name = "rust-build-script-example"
+version = "0.1.0"
+
