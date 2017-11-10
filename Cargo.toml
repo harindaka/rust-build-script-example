@@ -5,3 +5,6 @@ authors = ["harindaka <harindaka@gmail.com>"]
 build = "build.rs"
 
 [dependencies]
+
+[build-dependencies]
+build_script_file_gen = "0.1.0"
