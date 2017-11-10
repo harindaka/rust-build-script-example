@@ -2,13 +2,13 @@
 name = "rust-build-script-example"
 version = "0.1.0"
 dependencies = [
- "build_script_file_gen 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "build_script_file_gen 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "build_script_file_gen"
-version = "0.5.0"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [metadata]
-"checksum build_script_file_gen 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)" = "b4dbe7c3e7096cf7571e41d95bd48dea40b77e67f40c52aac5a74c2dfe8c0d0f"
+"checksum build_script_file_gen 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "c1ee6d805c8fd3085ac899f6a43a0b319b3da1503acb3000b6d8e2654b0a077c"
