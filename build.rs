@@ -21,6 +21,6 @@ fn main() {
 
     //or
 
-    let rust_code = r#"println!("Hello World! from Rust");"#;
+    let rust_code = r#"println!("Hello World! from Rust")"#;
     gen_file_str("hello.rs", &rust_code);
 }
